@@ -4,11 +4,6 @@
 	color: white;
 }
 
-body {
-     margin: 0;
-     background: url(https://cdn.elegantthemes.com/blog/wp-content/uploads/2013/09/bg-10-full.jpg);
-     background-size: 1440px 800px;
-     background-repeat:no-repeatdisplay: compact;
 </style>
 
 
@@ -16,7 +11,9 @@ body {
 
 <form name="loginForm" role="form" ng-class="{ 'form-login':true}">
 <p>
-<center><h3> BENVENUTO ACCEDI / REGISTRATI</h3> </center>
+<h3 ng-class="{ 'text-enter':true}"> 
+<img src="https://cdn3.iconfinder.com/data/icons/luchesa-vol-9/128/Home-48.png">
+BENVENUTO ACCEDI / REGISTRATI</h3>
   <div class="form-group">
 	<label for="UserName">UserName:</label> 
 	<input type="text" class="form-control" name="username" ng-model="username" ng-required="true" placeholder="Inserisci Nome Utente" >

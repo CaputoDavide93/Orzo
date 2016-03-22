@@ -14,6 +14,17 @@ body {
   padding: 0;
 }
 
+#bg {
+width: 100%; height: 100%; top: 0; left: 0;
+background: url(http://static.tumblr.com/a7f0d449cf9d1e9a47a64306e50fac32/izi7nlk/3S6mxuo9w/tumblr_static_summer_sunset_created_by_-_marilou.png) no-repeat center top; position: fixed; z-index: -1;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+}
+
+
+
 /* Everything but the jumbotron gets side spacing for mobile first views */
 .header,
 .marketing,
