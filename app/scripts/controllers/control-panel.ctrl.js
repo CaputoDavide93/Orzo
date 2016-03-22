@@ -23,10 +23,13 @@ angular.module('orzoApp')
 			 $location.path("/main");
 		};
 
-		vm.updateCampi=function(){
-				console.log("PRIMA ",vm.utenteLocale)
-			LoggedUserFactory.updateUser(vm.utenteLocale);
-							console.log("DOPO ",vm.utenteLocale)
+		vm.updateCampi=function(user){
+				console.log("PRIMA ",user);
+				// console.log("PRIMA ",vm.utenteLocale)
+			// LoggedUserFactory.updateUser(vm.utenteLocale);
+			LoggedUserFactory.updateUser(user);
+							console.log("DOPO ",user);
+							// console.log("DOPO ",vm.utenteLocale)
 
 		};
 

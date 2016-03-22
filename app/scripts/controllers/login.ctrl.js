@@ -16,8 +16,6 @@ angular.module('orzoApp')
         vm.disReg;
         vm.mettiFuoco;
 
-        console.log(LoggedUserFactory.getLoggedUser());
-
       vm.controllo=function(user,pass){
         if(UsersFactory.checkCredentials(user,pass)==='La password è sbagliata'){
             vm.messLog="Hai Sbagliato La Password " + user.toUpperCase()
@@ -36,15 +34,10 @@ angular.module('orzoApp')
             $location.path("/main");
           }
 
-          vm.goToRegister=function(user,pass){
-
-            console.log("USER ", user);
-             console.log("PASS ", pass);
-
-              LoggedUserFactory.setLoggedUserName(user);
-              LoggedUserFactory.setLoggedUserPassword(pass);
-
-            $location.path("/register");
+          vm.goToRegister=function(name,pass){
+            LoggedUserFactory.setLoggedUserName(name);
+            LoggedUserFactory.setLoggedUserPassword(pass);
+           $location.path("/register");
           };
 
 

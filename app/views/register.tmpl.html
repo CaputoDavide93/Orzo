@@ -15,12 +15,12 @@
   <div class="form-group" ng-repeat="(prop, valore) in registerctrl.utenteLocale">
     <label class="col-sm-2 control-label"> {{prop}} </label>
     <div class="col-sm-10">
-      <input ng-model="valore" type="text" class="form-control" id="{{prop}}" placeholder="Inserisci {{prop}}">
+      <input ng-model="registerctrl.utenteLocale[prop]" type="text" class="form-control" id="{{prop}}" placeholder="Inserisci {{prop}}">
     </div>
   </div>
   <div class="form-group">
     <div class="col-sm-offset-2 col-sm-10">
-      <button type="submit" class="btn btn-success" ng-click="">CONFERMA REGISTRAZIONE</button>
+      <button type="submit" class="btn btn-success" ng-click="registerctrl.regiCampi(registerctrl.utenteLocale)">CONFERMA REGISTRAZIONE</button>
     </div>
   </div>
 </form>
